@@ -1,11 +1,28 @@
 Этот блок "Junior" имеет следующие темы:
 
-- Структуры данных и алгоритмы
+1. Структуры данных и алгоритмы
 
-- Ввод-вывод
+-Maven
 
-- SQL, JDBC
+-AssertJ
 
-- Garbage Collection
+-Iterator
 
-- Чистая архитектура
+-Generic
+
+-List, Set, Map, Tree
+2. Ввод-вывод
+
+-Socket
+
+-Логгирование
+
+-Сериализация
+
+3. SQL, JDBC
+
+4. Garbage Collection
+
+5. Чистая архитектура
+
+-TDD, SRP, OCP, LSP, ISP, DIP
