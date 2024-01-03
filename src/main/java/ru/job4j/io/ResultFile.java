@@ -1,6 +1,7 @@
 package ru.job4j.io;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class ResultFile {
 
@@ -8,7 +9,7 @@ public class ResultFile {
         try (FileOutputStream output = new FileOutputStream("data/dataresult.txt")) {
             output.write("Hello, world!".getBytes());
             output.write(System.lineSeparator().getBytes());
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
