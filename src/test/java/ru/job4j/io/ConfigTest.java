@@ -41,4 +41,13 @@ class ConfigTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("key=value pattern violation");
     }
+
+    @Test
+    void whenIllegalArg4() {
+        String path = "data/illegal_arg_4.properties";
+        Config config = new Config(path);
+        assertThatThrownBy(config::load)
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("key=value pattern violation");
+    }
 }
