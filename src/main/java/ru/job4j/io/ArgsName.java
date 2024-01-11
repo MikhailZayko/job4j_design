@@ -16,6 +16,18 @@ public class ArgsName {
 
     private void parse(String[] args) {
         for (String arg : args) {
+            int indexOfEqualSign = arg.indexOf('=');
+            String key = arg.substring(1, indexOfEqualSign);
+            String value = arg.substring(indexOfEqualSign + 1);
+            values.put(key, value);
+        }
+    }
+
+    private static void validateArgs(String[] args) {
+        if (args.length == 0) {
+            throw new IllegalArgumentException("Arguments not passed to program");
+        }
+        for (String arg : args) {
             if (!arg.startsWith("-")) {
                 throw new IllegalArgumentException(
                         String.format("Error: This argument '%s' does not start with a '-' character", arg));
@@ -35,14 +47,11 @@ public class ArgsName {
                 throw new IllegalArgumentException(
                         String.format("Error: This argument '%s' does not contain a value", arg));
             }
-            values.put(key, value);
         }
     }
 
     public static ArgsName of(String[] args) {
-        if (args.length == 0) {
-            throw new IllegalArgumentException("Arguments not passed to program");
-        }
+        validateArgs(args);
         ArgsName names = new ArgsName();
         names.parse(args);
         return names;
