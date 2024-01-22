@@ -20,7 +20,7 @@ public class EchoServer {
                     switch (message) {
                         case "Hello" -> output.write("Hello".getBytes());
                         case "Exit" -> server.close();
-                        default -> output.write(message.getBytes());
+                        default -> output.write("What".getBytes());
                     }
                     output.flush();
                 }
