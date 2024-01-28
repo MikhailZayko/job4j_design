@@ -22,6 +22,26 @@ public class Man {
         this.address = address;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public boolean isMarried() {
+        return married;
+    }
+
+    public String[] getChildren() {
+        return children;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
     @Override
     public String toString() {
         return "Man{"
