@@ -1,0 +1,8 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<man name="Ivan" age="35" married="true">
+    <children>
+        <child>Anna</child>
+        <child>Peter</child>
+    </children>
+    <address city="Moscow" street="Pushkin"/>
+</man>
