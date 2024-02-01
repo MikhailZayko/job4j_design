@@ -56,6 +56,9 @@ public class FileSearch {
     }
 
     private static void validateKeys(String[] args) {
+        if (args.length != 4) {
+            throw new IllegalArgumentException("There should be 4 arguments");
+        }
         if (!args[0].startsWith("-d=")) {
             throw new IllegalArgumentException("The first key should be 'd'");
         }
