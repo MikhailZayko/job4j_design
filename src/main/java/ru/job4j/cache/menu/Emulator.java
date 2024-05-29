@@ -97,4 +97,5 @@ public class Emulator {
         Scanner scanner = new Scanner(System.in);
         start(scanner);
     }
+
 }
