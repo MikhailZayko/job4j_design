@@ -1,4 +1,4 @@
-package ru.job4j.violationsrp;
+package ru.job4j.violation.srp;
 
 import java.io.FileWriter;
 import java.io.IOException;

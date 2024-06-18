@@ -1,4 +1,4 @@
-package ru.job4j.violationsrp;
+package ru.job4j.violation.srp;
 
 /**
  * Этот класс выполняет две задачи: управление данными (CRUD-операции) и бизнес-логику (вычисление скидки).
