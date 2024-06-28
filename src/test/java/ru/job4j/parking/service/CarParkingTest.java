@@ -1,6 +1,5 @@
 package ru.job4j.parking.service;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import ru.job4j.parking.model.PassengerCar;
 import ru.job4j.parking.model.Truck;
@@ -10,7 +9,6 @@ import static org.assertj.core.api.Assertions.*;
 class CarParkingTest {
 
     @Test
-    @Disabled("Удалить аннотацию после реализации метода.")
     void whenVehicleParking() {
         Parking parking = new CarParking(6, 1);
         assertThat(parking.vehicleParking(new PassengerCar())).isTrue();
