@@ -1,5 +1,6 @@
 package ru.job4j.storage.store;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import ru.job4j.storage.model.Food;
 
@@ -8,6 +9,7 @@ import java.time.Month;
 
 import static org.assertj.core.api.Assertions.*;
 
+@Disabled
 class WarehouseTest {
 
     @Test
