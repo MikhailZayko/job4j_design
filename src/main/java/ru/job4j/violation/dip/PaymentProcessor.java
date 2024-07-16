@@ -17,5 +17,6 @@ public class PaymentProcessor {
 
 class CreditCardPayment {
     public void pay() {
+
     }
 }

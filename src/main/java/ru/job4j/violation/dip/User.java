@@ -6,6 +6,7 @@ package ru.job4j.violation.dip;
  */
 
 public class User {
+
 }
 
 class UserService {
