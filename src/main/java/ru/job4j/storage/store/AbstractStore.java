@@ -11,6 +11,11 @@ public abstract class AbstractStore implements Store {
 
     @Override
     public List<Food> findAll() {
-        return foodList;
+        return List.copyOf(foodList);
+    }
+
+    @Override
+    public void deleteAll() {
+        foodList.clear();
     }
 }

@@ -16,4 +16,12 @@ public class ControlQuality {
     public void distribution(Food food) {
         storeList.forEach(store -> store.add(food));
     }
+
+    public void resort() {
+        List<Food> foodList = storeList.stream()
+                .flatMap(store -> store.findAll().stream())
+                .toList();
+        storeList.forEach(Store::deleteAll);
+        foodList.forEach(this::distribution);
+    }
 }

@@ -9,4 +9,6 @@ public interface Store {
     void add(Food food);
 
     List<Food> findAll();
+
+    void deleteAll();
 }
