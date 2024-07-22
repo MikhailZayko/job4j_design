@@ -11,9 +11,9 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
+@Disabled
 class ControlQualityTest {
 
-    @Disabled
     @Test
     void whenDistribution() {
         List<Store> storeList = List.of(new Warehouse(), new Shop(), new Trash());
